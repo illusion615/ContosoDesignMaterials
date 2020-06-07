@@ -1,0 +1,48 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Test",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "dummyapifordemo.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/api/values/getguestwifi": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "apn": {
+                  "type": "string",
+                  "description": "apn"
+                },
+                "password": {
+                  "type": "string",
+                  "description": "password"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get guest wifi",
+        "operationId": "GetGuestWifi",
+        "parameters": []
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
